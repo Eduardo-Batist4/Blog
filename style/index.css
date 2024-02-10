@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,9 +29,10 @@ body {
   align-items: center;
   transition: 300ms;
 }
-.header .header-container h4 {
+.header .header-container h4 a {
   font-size: 2rem;
   color: #ffffff;
+  text-decoration: none;
 }
 .header .header-container .nav ul {
   display: flex;
