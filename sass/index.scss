@@ -148,4 +148,48 @@ body{
     }
 }
 
-
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .contact-container{
+        width: 70%;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #dbdbd8;
+        h4{
+            font-size: 2.5rem;
+            margin-top: 10rem;
+        }
+        p{
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+        form{
+            width: 50rem;
+            text-align: center;
+            input{
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border: none;
+                outline: none;
+            }
+            button{
+                width: 15rem;
+                padding: 1rem 0;
+                margin-top: 2rem;
+                font-size: 1.8rem;
+                border: 0.1rem solid black;
+                background-color: #dbdbd8;
+                cursor: pointer;
+                transition: 300ms ease-in-out;
+                &:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}

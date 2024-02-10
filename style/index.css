@@ -148,4 +148,50 @@ body {
   line-height: 3.2rem;
 }
 
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-container {
+  width: 70%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dbdbd8;
+}
+.contact .contact-container h4 {
+  font-size: 2.5rem;
+  margin-top: 10rem;
+}
+.contact .contact-container p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.contact .contact-container form {
+  width: 50rem;
+  text-align: center;
+}
+.contact .contact-container form input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: none;
+  outline: none;
+}
+.contact .contact-container form button {
+  width: 15rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  border: 0.1rem solid black;
+  background-color: #dbdbd8;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+}
+.contact .contact-container form button:hover {
+  background-color: black;
+  color: white;
+}
+
 /*# sourceMappingURL=index.css.map */
