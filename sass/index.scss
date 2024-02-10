@@ -17,14 +17,15 @@ body{
     position: fixed;
     display: flex;
     justify-content: center;
+    z-index: 10000;
     .header-container{
-        background-color: transparent;
         width: 70%;
         height: 6rem;
         padding: 0 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: 300ms;
         h4{
             font-size: 2rem;
             color: $light;
