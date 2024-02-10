@@ -1,3 +1,5 @@
+@import './color.scss';
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +9,7 @@ html{
     font-size: 62.5%;
 }
 body{
-    background-color: #f4f3ee;
-    margin-bottom: 20rem;
+    background-color: $primary;
 }
 
 .header{
@@ -26,7 +27,7 @@ body{
         align-items: center;
         h4{
             font-size: 2rem;
-            color: white;
+            color: $light;
         }
         .nav{
             ul{
@@ -39,7 +40,7 @@ body{
             a{
                 font-size: 1.8rem;
                 text-decoration: none;
-                color: black;
+                color: $dark;
             }
         }
         .buttons-mobile{
@@ -86,10 +87,17 @@ body{
             .card-photo{
                 width: 35rem;
                 height: 50rem;
-                background-color: #dbdbd8;
+                background-color: $secundary;
+                overflow: hidden;
+                position: relative;
                 .photo-img{
                     width: 100%;
                     height: 90%;
+                    transition: .3s;
+                    z-index: -1;
+                    &:hover{
+                        transform: scale(1.2) rotate(5deg);
+                    }
                     img{
                         width: 100%;
                         height: 100%;
@@ -100,6 +108,9 @@ body{
                     justify-content: center;
                     align-items: center;
                     height: 10%;
+                    background-color: $secundary;
+                    position: relative;
+                    z-index: 1;
                     p{
                         font-size: 1.8rem;
                     }
@@ -129,7 +140,7 @@ body{
         .about-text{
             width: 60%;
             height: 100%;
-            background-color: #dbdbd8;
+            background-color: $secundary;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -155,10 +166,11 @@ body{
     .contact-container{
         width: 70%;
         height: 40vh;
+        margin-bottom: 10rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #dbdbd8;
+        background-color: $secundary;
         h4{
             font-size: 2.5rem;
             margin-top: 10rem;
@@ -175,21 +187,50 @@ body{
                 padding: 1.5rem 2rem;
                 border: none;
                 outline: none;
+                background-color: $input;
             }
             button{
                 width: 15rem;
                 padding: 1rem 0;
                 margin-top: 2rem;
                 font-size: 1.8rem;
-                border: 0.1rem solid black;
-                background-color: #dbdbd8;
+                border: 0.1rem solid $dark;
+                background-color: $secundary;
                 cursor: pointer;
                 transition: 300ms ease-in-out;
                 &:hover{
-                    background-color: black;
-                    color: white;
+                    background-color: $dark;
+                    color: $light;
                 }
             }
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .footer-container{
+        width: 70%;
+        height: 30vh;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .social-media{
+            a{
+                font-size: 3rem;
+                color: $dark;
+                margin-right: 1.5rem;
+                &:hover{
+                    transition: 300ms ease-in-out;
+                    color: $secundary;
+                }
+            }
+        }
+        p{
+            font-size: 1.8rem;
         }
     }
 }

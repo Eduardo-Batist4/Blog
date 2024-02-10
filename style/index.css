@@ -10,7 +10,6 @@ html {
 
 body {
   background-color: #f4f3ee;
-  margin-bottom: 20rem;
 }
 
 .header {
@@ -30,7 +29,7 @@ body {
 }
 .header .header-container h4 {
   font-size: 2rem;
-  color: white;
+  color: #ffffff;
 }
 .header .header-container .nav ul {
   display: flex;
@@ -42,7 +41,7 @@ body {
 .header .header-container .nav a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 .header .header-container .buttons-mobile {
   display: none;
@@ -90,10 +89,17 @@ body {
   width: 35rem;
   height: 50rem;
   background-color: #dbdbd8;
+  overflow: hidden;
+  position: relative;
 }
 .photos .photos-container .gallery .card-photo .photo-img {
   width: 100%;
   height: 90%;
+  transition: 0.3s;
+  z-index: -1;
+}
+.photos .photos-container .gallery .card-photo .photo-img:hover {
+  transform: scale(1.2) rotate(5deg);
 }
 .photos .photos-container .gallery .card-photo .photo-img img {
   width: 100%;
@@ -104,6 +110,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 10%;
+  background-color: #dbdbd8;
+  position: relative;
+  z-index: 1;
 }
 .photos .photos-container .gallery .card-photo .description-photo p {
   font-size: 1.8rem;
@@ -156,6 +165,7 @@ body {
 .contact .contact-container {
   width: 70%;
   height: 40vh;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,20 +188,47 @@ body {
   padding: 1.5rem 2rem;
   border: none;
   outline: none;
+  background-color: #ededed;
 }
 .contact .contact-container form button {
   width: 15rem;
   padding: 1rem 0;
   margin-top: 2rem;
   font-size: 1.8rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid #000000;
   background-color: #dbdbd8;
   cursor: pointer;
   transition: 300ms ease-in-out;
 }
 .contact .contact-container form button:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer .footer-container {
+  width: 70%;
+  height: 30vh;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-container .social-media a {
+  font-size: 3rem;
+  color: #000000;
+  margin-right: 1.5rem;
+}
+.footer .footer-container .social-media a:hover {
+  transition: 300ms ease-in-out;
+  color: #dbdbd8;
+}
+.footer .footer-container p {
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=index.css.map */
