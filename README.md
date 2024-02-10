@@ -1,1 +1,1 @@
-# The Movie Database (TMDb) API
+# Blog

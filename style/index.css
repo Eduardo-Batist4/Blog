@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f4f3ee;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+}
+.header .header-container {
+  background-color: transparent;
+  width: 70%;
+  height: 6rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-container h4 {
+  font-size: 2rem;
+  color: white;
+}
+.header .header-container .nav ul {
+  display: flex;
+  list-style: none;
+}
+.header .header-container .nav ul li {
+  margin-left: 3rem;
+}
+.header .header-container .nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.header .header-container .buttons-mobile {
+  display: none;
+}
+
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home .home-container {
+  width: 70%;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
+.home .home-container img {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */
