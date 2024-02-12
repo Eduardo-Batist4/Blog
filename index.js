@@ -1,28 +1,3 @@
-// const menuLinks = document.querySelectorAll('nav a[href^="#"]');
-
-// function getDistanceFromTheTop(element) {
-//     const id = element.getAttribute('href');
-//     return document.querySelector(id).offsetTop;
-// }
-
-// function nativeScroll(distanceFromTheTop) {
-//     window.scroll({
-//         top: distanceFromTheTop,
-//         behavior: 'smooth',
-//     });
-// };
-
-// function scrollToSection(event) {
-//     event.preventDefault();
-//     const distanceFromTheTop = getDistanceFromTheTop(event.target) - 90;
-//     nativeScroll(distanceFromTheTop);
-// }
-
-
-// menuLinks.forEach((link) => {
-//     link.addEventListener('click', scrollToSection);
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.querySelector('.header-container');
     const logo = document.querySelector('.logo');
@@ -37,3 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 });
+
+const btnOpen = document.querySelector('.open-menu');
+const btnClose = document.querySelector('.close-menu');
+const navMenu = document.querySelector('.nav');
+
+btnOpen.addEventListener('click', () => {
+    navMenu.classList.add('nav-mobile');
+    btnOpen.classList.add('off')
+    btnClose.classList.add('on')
+})
+btnClose.addEventListener('click', () => {
+    navMenu.classList.remove('nav-mobile');
+    btnOpen.classList.remove('off')
+    btnClose.classList.remove('on')
+})
