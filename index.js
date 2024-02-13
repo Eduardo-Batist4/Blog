@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         if(window.scrollY > 50) {
             navbar.style.backgroundColor = '#c2c2c2'
+            navbar.classList.add('header-shadow');
             logo.style.color = '#000000'
         } else {
             navbar.style.backgroundColor = 'transparent'
+            navbar.classList.remove('header-shadow');
             logo.style.color = '#ffffff'
         }
     })
