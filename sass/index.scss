@@ -391,88 +391,9 @@ body{
     body{
         width: 100%;
     }
-    .header{
-        width: 100%;
-        .header-container{
-            width: 100%;
-            justify-content: space-between;
-            .nav{
-                display: none;
-            }
-            .nav-mobile{
-                display: block;
-                ul{
-                    display: block;
-                    text-align: center;
-                    padding-top: 6em;
-                    background-color: $secundary;
-                    box-shadow: 5px 5px 20px 0 $dark;
-                    width: 100%;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    height: auto;
-                    li{
-                        width: 90%;
-                        padding: 1rem 0;
-                        margin: 0 auto;
-                        margin-bottom: 2rem;
-                        border: 1px solid $dark;
-                        &:hover{
-                            transition: 300ms ease-in-out;
-                            background-color: $dark;
-                            a{
-                                color: $light;
-                            }
-                        }
-                        a{
-                            width: 100%;
-                            padding: 0.5rem 35%;
-                        }
-                    }
-                }
-
-            }
-            .buttons-mobile{
-                display: flex;
-                z-index: 100;
-                .close-menu{
-                    display: none;
-                }
-                .off{
-                    display: none;
-                }
-                .on{
-                    display: flex;
-                }
-            }
-        }
-    }
-
-    .home{
-        .home-container{
-            width: 100%;
-            height: 50vh;
-        }
-    }
-
-    .photos{
-        .photos-container{
-            width: 100%;
-            height: auto;
-            .gallery{
-                .card-photo{
-                    margin-bottom: 2rem;
-                }
-            }
-        }
-    }
 
     .about{
         .about-container{
-            width: 100%;
-            height: auto;
-            // margin-bottom: 10rem;
             .about-photo{
                 width: 100%;
                 height: 55%;
@@ -485,8 +406,6 @@ body{
                 }
                 p{
                     width: 35rem;
-                    font-size: 1.9rem;
-                    line-height: 3.0rem;
                 }
             }
         }
@@ -495,19 +414,6 @@ body{
     .contact{
         .contact-container{
             width: 100%;
-            height: auto;
-            padding: 0 2rem;
-            margin-bottom: 8rem;
-            h4{
-                margin-top: 5rem;
-            }
-            form{
-                padding: 0 2rem;
-                margin-bottom: 3rem;
-                input{
-                    width: 90%;
-                }
-            }
         }
     }
 
