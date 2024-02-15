@@ -253,6 +253,30 @@ body {
   font-size: 1.8rem;
 }
 
+@media (max-width: 1024px) {
+  .header .header-container {
+    width: 90%;
+  }
+  .home .home-container {
+    width: 90%;
+  }
+  .photos .photos-container {
+    width: 90%;
+  }
+  .photos .photos-container .gallery .card-photo {
+    margin-bottom: 3rem;
+  }
+  .about .about-container {
+    width: 90%;
+    height: auto;
+  }
+  .about .about-container .about-text h4 {
+    margin-top: 8rem;
+  }
+  .about .about-container .about-text p {
+    width: 90%;
+  }
+}
 @media (max-width: 768px) {
   .header {
     width: 100%;
