@@ -6,7 +6,7 @@ Esse é um Blog minimalista de um fotografo fictisio.
 
 Utilizei HTML, JavaScript e SASS para criar este blog, Contendo animações tanto na rolagem quanto nas imagens. O design é responsivo, adaptando-se perfeitamente a dispositivos móveis, tablets e desktops.
 
-https://eduardo-oreia.github.io/Blog/
+https://eduardo-batist4.github.io/Blog/
 
 
 
